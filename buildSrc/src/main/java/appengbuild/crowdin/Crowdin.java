@@ -356,6 +356,6 @@ public class Crowdin implements AutoCloseable {
 
     @Override
     public void close() {
-        httpClient.close();
+        // HttpClient doesn't need explicit closing in modern Java versions
     }
 }
